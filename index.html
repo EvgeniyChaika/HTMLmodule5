@@ -14,8 +14,7 @@
             </a></li>
             <li>
                 <a href="#">
-                    <img src="img/flag.png">
-
+                    <img src="img/flag.png" alt="Flag">
                     <div>Minhas Ofertas</div>
                 </a>
             </li>
@@ -32,21 +31,26 @@
                 <div class="content-form-header"><span>Cadastre-se</span></div>
             </div>
             <div class="facebook">
-                <a href="#"><img src="img/button_facebook.png"></a>
+                <a href="#"><img src="img/button_facebook.png" alt="Facebook"></a>
             </div>
             <div class="form">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="email" placeholder="Email Address">
-                <input type="password" placeholder="Choose Password">
-                <input type="password" placeholder="Password Confirm">
+                <form id="auth">
+                <input class="form-input" type="text" placeholder="First Name" form="auth" required>
+                <input class="form-input" type="text" placeholder="Last Name" form="auth" required>
+                <input class="form-input" type="email" placeholder="Email Address" form="auth"  required>
+                <input class="form-input" type="password" placeholder="Choose Password" form="auth"  required>
+                <input class="form-input" type="password" placeholder="Password Confirm" form="auth"  required>
                 <label><input type="checkbox">Send me Youtube updates and tips</label>
                 <input type="submit" value="Create my Account">
+                </form>
             </div>
-            <div class="form-image"><img src="img/OU.png"></div>
+            <div class="form-image"><img src="img/OU.png" alt="OU"></div>
+            <div class="content-form-footer">
+                <p>By clicking the button above, you agree to the Terms of Service</p>
+                    <p>Xiew our Privacy Policy.</p>
+            </div>
         </div>
     </div>
-
 </div>
 </body>
 </html>
