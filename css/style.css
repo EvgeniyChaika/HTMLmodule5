@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+    url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Helvetica Neue Medium', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+
+}
+
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+
+    background: #13749C;
+
+}
+
+.header ul {
+    display: block;
+    background: inherit;
+    float: right;
+    width: 100%;
+    margin-right: 21px;
+}
+
+.header li {
+    float: right;
+}
+
+.header a {
+    display: block;
+    color: #60b5ed;
+    padding: 11px 22px;
+    text-decoration: none;
+}
+
+.header li:nth-child(2) a {
+    display: block;
+    position: relative;
+    padding: 11px 18px 11px 50px;
+    border-left: 1px solid #60b5ed;
+    color: white;
+}
+
+.header li:nth-child(2) img {
+    position: absolute;
+    left: 19px;
+    top: 5px;
+}
+
+.header li:first-child a {
+    padding: 11px 12px;
+    color: white;
+}
+
+.header li:first-child span {
+    text-decoration: underline;
+}
+
+.header a:hover {
+    background: #60b5ed;
+    color: white;
+}
+
+.header li:first-child a:hover,
+.header li:nth-child(2) a:hover {
+    background: #6495ED;
+    color: white;
+}
+
+.content {
+    background: url("../img/Background%20copy.png") no-repeat;
+    padding: 213px 302px 202px 353px;
+}
+
+.content-form-wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.content-form {
+    width: 560px;
+    height: 612px;
+    background: rgba(0,0,0,0.6);
+}
+
+.content-form-header {
+    padding: 21px 0;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.facebook a {
+    display: block;
+    position: absolute;
+    left: 142px;
+    top: 100px;
+}
+
+.facebook a:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 4px 4px #60b5ed;
+    border-radius: 3px;
+}
+
+.form {
+    position: absolute;
+    left: 142px;
+    top: 172px;
+    border-top: 2px solid #999999;
+    padding-top: 35px;
+    color:  #cccccc;
+}
+
+.form input {
+    display: block;
+    width: 257px;
+    height: 33px;
+    margin-bottom: 17px;
+    background: black;
+    box-shadow: 0 1px 0 0 #4b4b4b;
+    border: none;
+    border-radius: 3px;
+    line-height: 16px;
+    padding-left: 19px;
+}
+.form label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+.form [type='checkbox'] {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 8px 0  0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+.form input[type='submit'] {
+    width: 150px;
+    height:35px;
+    color: white;
+    margin: 22px auto 20px;
+    padding: 0;
+    background: #60b5ed;
+}
+.form-image {
+    position: absolute;
+    left:271px;
+    top:167px;
+}
