@@ -9,6 +9,7 @@
     font-style: normal;
 
 }
+
 body {
     font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 14px;
@@ -16,19 +17,22 @@ body {
     line-height: 14px;
     text-align: left;
 }
+
 .clearFix:after {
     content: "";
     display: block;
     clear: both;
 }
+
 .wrapper {
     max-width: 1216px;
     width: 100%;
     margin: 0 auto;
 }
+
 /*-----------------------HEADER-----------------------*/
 .header {
-    background: #13749C;
+    background: #085494;
 }
 
 .header ul {
@@ -41,13 +45,16 @@ body {
 
 .header li {
     float: right;
+    color: white;
 }
+
 .header a {
     display: block;
     color: #60b5ed;
     padding: 11px 22px;
     text-decoration: none;
 }
+
 .header li:nth-child(2) a {
     display: block;
     position: relative;
@@ -55,41 +62,55 @@ body {
     border-left: 1px solid #60b5ed;
     color: white;
 }
+
 .header li:nth-child(2) img {
     position: absolute;
     left: 19px;
     top: 5px;
+
 }
-.header li:first-child a {
-    padding: 11px 12px;
+
+.header a:hover,
+.header li:nth-child(2) a:hover {
+    background: #4eabda;
     color: white;
 }
-.header li:first-child span {
+
+.header li:first-child {
+    padding: 11px 12px;
+    background: #3483c8;
+}
+
+.header li:first-child span a {
+    padding: 0;
+    display: inline-block;
+    color: white;
     text-decoration: underline;
 }
-.header a:hover {
-    background: #60b5ed;
-    color: white;
+
+.header li:first-child a:hover {
+    text-decoration: none;
+    background: inherit;
 }
-.header li:first-child a:hover,
-.header li:nth-child(2) a:hover {
-    background: #6495ED;
-    color: white;
-}
+
 /*------------------------CONTENT--------------------------*/
 
 .content {
     background: url("../img/Background%20copy.png") no-repeat;
-    padding: 213px 302px 202px 353px;
+    padding: 183px 302px 202px 355px;
 }
+
 .content-form-wrapper {
     position: relative;
+
 }
+
 .content-form {
     width: 560px;
     height: 612px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
+
 .content-form-header {
     padding: 21px 0;
     border-bottom: 2px solid white;
@@ -98,6 +119,7 @@ body {
     line-height: 16px;
     text-align: center;
 }
+
 .facebook a {
     display: block;
     position: absolute;
@@ -105,17 +127,39 @@ body {
     top: 100px;
 }
 
-.facebook a:hover {
-    box-shadow: 0 0 4px 4px #60b5ed;
-    border-radius: 3px;
+.form-line {
+    position: absolute;
+    top: 166px;
+    left: 142px;
 }
+
+.form-line span {
+    color: #7d807c;
+    font-size: 13px;
+}
+
+.left-line,
+.right-line {
+    display: inline-block;
+    width: 120px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+}
+
+.left-line {
+    margin-right: 8px;
+}
+
+.right-line {
+    margin-left: 8px;
+}
+
 /*-------------------------------FORM------------------------------*/
 .form {
     position: absolute;
     left: 142px;
-    top: 172px;
-    border-top: 2px solid #999999;
-    padding-top: 35px;
+    top: 207px;
 }
 
 .form input {
@@ -127,58 +171,60 @@ body {
     box-shadow: 0 1px 0 0 #4b4b4b;
     border: none;
     border-radius: 3px;
-    color:  #cccccc;
+    color: #cccccc;
     line-height: 16px;
     padding-left: 19px;
+    outline: none;
 }
+
 .form-input:focus {
-    box-shadow: 0 0 4px 4px #60b5ed;
+    box-shadow: 0 0 3px 3px #538db5;
     border-radius: 3px;
-    background: #13749C;
+    background: #1b5288;
 }
-.form label{
+
+.form label {
     display: block;
     padding-left: 15px;
     text-indent: -15px;
 }
+
 .form [type='checkbox'] {
     display: inline-block;
     width: 13px;
     height: 13px;
-    margin: 0 8px 0  0;
+    margin: 0 8px 0 0;
     vertical-align: bottom;
     position: relative;
     top: -1px;
     *overflow: hidden;
 }
+
 .form label {
-    color:  #cccccc;
+    color: #cccccc;
 }
+
 .form [type='submit'] {
     width: 150px;
-    height:35px;
+    height: 35px;
     color: white;
     margin: 22px auto 20px;
     padding: 0;
-    background: #60b5ed;
+    background: #3a8ecd;
 }
-.form-image {
-    position: absolute;
-    left:271px;
-    top:167px;
-    width:30px;
-    height:14px;
-    background: #2F3E34;
-    text-align: center;
+
+.facebook a:hover {
+    opacity: 0.8;
 }
+
 /*---------------------------FOOTER------------------------*/
 .content-form-footer {
     position: absolute;
     text-align: center;
     font-size: 11px;
-    color:  #cccccc;
+    color: #cccccc;
     line-height: 16px;
     left: 118px;
-    width:324px;
+    width: 324px;
     bottom: 19px;
 }
