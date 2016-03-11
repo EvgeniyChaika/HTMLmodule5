@@ -11,6 +11,8 @@
 }
 
 body {
+    background: url("../img/Background%20copy.png") no-repeat;
+    background-size: cover;
     font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -96,7 +98,6 @@ body {
 /*------------------------CONTENT--------------------------*/
 
 .content {
-    background: url("../img/Background%20copy.png") no-repeat;
     padding: 183px 302px 202px 355px;
 }
 
